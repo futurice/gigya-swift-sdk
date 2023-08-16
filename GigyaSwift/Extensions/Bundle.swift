@@ -18,6 +18,10 @@ extension Bundle {
             return ""
         }
 
+        if let customModuleName: String = dictionary["GigyaLoginProvidersModuleName"] as? String {
+            return customModuleName
+        }
+
         if let version: String = dictionary["CFBundleName"] as? String {
             return version
         } else {
